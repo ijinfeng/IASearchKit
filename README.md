@@ -1,0 +1,31 @@
+# IASearchKit
+
+### 介绍
+* 支持精确搜索、拼音首字母搜索、全拼搜索
+* 支持关键字识别，多个关键字识别
+
+### 效果图
+![image](https://github.com/CranzCapatain/IASearchKit/edit/master/Search.gif)
+
+### SearchKit文件描述
+* IAUni2Pinyin.txt
+这个文件记录着所有中文的uncoide及其对应的多音字（⚠️ **不要去修改这个文件下的东西** ）
+* IAPinYinHelper
+这个 Helper 类提供了一些转换字符串到拼音的便利方法
+* IAPinYinManager
+单例类，这里有个api`loadPinyinData`需要在合适的时候去调用，它会把**IAUni2Pinyin**文件中的内容读取到内存中去
+* NSString+Search
+这个分类用于搜索关键字或者拼音匹配识别，一般用这个类里的方法就够了
+* NSArray+Combine
+工具类，不多介绍...
+
+### 使用
+下面方法就是拼音匹配的用法：
+
+```
+NSRange range;
+BOOL match = [self.textLabel.text canMatchWithKeyword:searchText range:&range];
+if (match) {
+
+}
+```
