@@ -5,7 +5,7 @@
 * 支持关键字识别，多个关键字识别
 
 ### 效果图
-![image](https://github.com/CranzCapatain/IASearchKit/edit/master/Search.gif)
+![image](https://github.com/CranzCapatain/IASearchKit/blob/master/Search.gif)
 
 ### SearchKit文件描述
 * IAUni2Pinyin.txt
