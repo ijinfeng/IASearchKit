@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aJq-W5-33s">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="gLn-L1-9ix"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国ren好,中国人名hao,重量级人wu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeP-Ej-0wS">
+                                <rect key="frame" x="0.0" y="156" width="375" height="511"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HeP-Ej-0wS" firstAttribute="top" secondItem="aJq-W5-33s" secondAttribute="bottom" constant="80" id="3MQ-8d-seN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HeP-Ej-0wS" secondAttribute="trailing" id="7xt-CY-Kf4"/>
+                            <constraint firstItem="aJq-W5-33s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DfB-ck-PWM"/>
+                            <constraint firstItem="HeP-Ej-0wS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y1C-hc-0Uo"/>
+                            <constraint firstItem="aJq-W5-33s" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="a6E-H2-7Gb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HeP-Ej-0wS" secondAttribute="bottom" id="gs0-qt-LGa"/>
+                            <constraint firstItem="aJq-W5-33s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iLO-1z-pRo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="aJq-W5-33s" id="Jyj-Eb-zzS"/>
+                        <outlet property="textLabel" destination="HeP-Ej-0wS" id="BWy-Tr-RIF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-308" y="86.806596701649184"/>
+        </scene>
+    </scenes>
+</document>
