@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E3942A621117F190059D9DC /* IASearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IASearch.h; sourceTree = "<group>"; };
 		3E5D4B1620FB688B00C06AFF /* SearchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5D4B1920FB688B00C06AFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E5D4B1A20FB688B00C06AFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 				3E5D4B3520FB68FF00C06AFF /* NSString+Search.m */,
 				3E5F7298210861790085AF41 /* NSArray+Combine.h */,
 				3E5F7299210861790085AF41 /* NSArray+Combine.m */,
+				3E3942A621117F190059D9DC /* IASearch.h */,
 			);
 			path = SearchKit;
 			sourceTree = "<group>";

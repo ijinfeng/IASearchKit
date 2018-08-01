@@ -9,10 +9,7 @@
 
 
 #import "ViewController.h"
-#import "NSString+Search.h"
-#import "IAPinYinHelper.h"
-#import "IAPinYinManager.h"
-#import "NSArray+Combine.h"
+#import "IASearch.h"
 
 @interface ViewController ()<UISearchBarDelegate>
 
@@ -30,7 +27,6 @@
     
     // 请在合适的时候加载文件
     [[IAPinYinManager shared] loadPinyinData];
-    
     
     
     // 测试链

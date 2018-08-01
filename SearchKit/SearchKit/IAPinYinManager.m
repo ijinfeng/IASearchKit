@@ -49,7 +49,7 @@
     self.mpinyinDic = [NSMutableDictionary dictionary];
     self.minitialDic = [NSMutableDictionary dictionary];
     
-    NSString *dataPath = [[NSBundle mainBundle] pathForResource:@"IAUni2Pinyin" ofType:@"txt"];
+    NSString *dataPath = [[NSBundle bundleForClass:self.class] pathForResource:@"IAUni2Pinyin" ofType:@"txt"];
     NSFileHandle *readHandler = [NSFileHandle fileHandleForReadingAtPath:dataPath];
     NSString *string = [[NSString alloc] initWithData:readHandler.availableData encoding:NSUTF8StringEncoding];
     string = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
