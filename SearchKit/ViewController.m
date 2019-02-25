@@ -24,6 +24,7 @@
     [super viewDidLoad];
     
     self.searchBar.delegate = self;
+    _searchBar.enablesReturnKeyAutomatically = YES;
     
     // 请在合适的时候加载文件
     [[IAPinYinManager shared] loadPinyinData];

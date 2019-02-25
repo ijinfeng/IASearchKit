@@ -25,7 +25,7 @@
             break;
         }
         last_r.location = r.location + keyword.length;
-        last_r.length = self.length - last_r.location - 1;
+        last_r.length = self.length - last_r.location;
         
         [ranges addObject:[NSValue valueWithRange:r]];
     }

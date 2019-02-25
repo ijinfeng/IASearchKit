@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "IASearchKit"
-  s.version      = "1.0.1"
+  s.version      = "1.0.4"
   s.summary      = "search kit for iOS write by Objective-C"
   s.description  = <<-DESC
 			SearchKit support Chinese search, pinyin initials, full spelling.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.author             = { "Alter" => "1154941292@qq.com" }
 
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/CranzCapatain/IASearchKit.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/CranzCapatain/IASearchKit.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -31,7 +31,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = 'SearchKit/SearchKit/**/*'
+  s.source_files  = 'SearchKit/SearchKit/*.{h,m}'
+s.resources = 'SearchKit/SearchKit/*.txt'
 
 
 end
