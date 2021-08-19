@@ -49,7 +49,8 @@
     self.mpinyinDic = [NSMutableDictionary dictionary];
     self.minitialDic = [NSMutableDictionary dictionary];
     
-    NSString *dataPath = [[NSBundle mainBundle] pathForResource:@"IAUni2Pinyin" ofType:@"txt"];
+//    NSString *dataPath = [[NSBundle mainBundle] pathForResource:@"IAUni2Pinyin" ofType:@"txt"];
+    NSString *dataPath = [self dataPath];
     NSFileHandle *readHandler = [NSFileHandle fileHandleForReadingAtPath:dataPath];
     NSString *string = [[NSString alloc] initWithData:readHandler.availableData encoding:NSUTF8StringEncoding];
     string = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -105,14 +106,16 @@
 }
 
 - (NSString *)dataPath {
-//    [[NSBundle mainBundle] pathForResource:@"IAUni2Pinyin" ofType:@"txt"];
     // 动态库：use_framework!
     //[resources] ~/Build/Products/Debug-iphonesimulator/SearchKit.app/Frameworks/IASearchKit.framework/IAUni2Pinyin.txt
     //[resource_bundle] ~/Build/Products/Debug-iphonesimulator/SearchKit.app/Frameworks/IASearchKit.framework/IASearchKit.bundle/IAUni2Pinyin.txt
     
-    
     // 静态库：#use_framework!
     // ~/Build/Products/Debug-iphonesimulator/SearchKit.app/IASearchKit.bundle/IAUni2Pinyin.txt
+    NSString *datapath = @"";
+    NSBundle *b = [NSBundle bundleForClass:self.class];
+    datapath = [b.resourcePath stringByAppendingPathComponent:@"IAUni2Pinyin.txt"];
+    return datapath;
 }
 
 @end

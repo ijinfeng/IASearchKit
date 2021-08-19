@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17C171DFDCDF8A30273AF83D /* Pods_SearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7750AE1E1316303AAA9F5539 /* Pods_SearchKit.framework */; };
 		3E5D4B1B20FB688B00C06AFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D4B1A20FB688B00C06AFF /* AppDelegate.m */; };
 		3E5D4B1E20FB688B00C06AFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D4B1D20FB688B00C06AFF /* ViewController.m */; };
 		3E5D4B2120FB688B00C06AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D4B1F20FB688B00C06AFF /* Main.storyboard */; };
 		3E5D4B2320FB688B00C06AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D4B2220FB688B00C06AFF /* Assets.xcassets */; };
 		3E5D4B2620FB688B00C06AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D4B2420FB688B00C06AFF /* LaunchScreen.storyboard */; };
 		3E5D4B2920FB688B00C06AFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D4B2820FB688B00C06AFF /* main.m */; };
+		98842596F7B7FAED96C56EB7 /* libPods-SearchKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C8278F2A4E2C9201CCCBCE /* libPods-SearchKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08C8278F2A4E2C9201CCCBCE /* libPods-SearchKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SearchKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5D4B1620FB688B00C06AFF /* SearchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5D4B1920FB688B00C06AFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E5D4B1A20FB688B00C06AFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		3E5D4B2720FB688B00C06AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E5D4B2820FB688B00C06AFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		746132D3FF8F971EAEFC4903 /* Pods-SearchKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchKit.release.xcconfig"; path = "Target Support Files/Pods-SearchKit/Pods-SearchKit.release.xcconfig"; sourceTree = "<group>"; };
-		7750AE1E1316303AAA9F5539 /* Pods_SearchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7B7DAA1B7B2ECD92263461 /* Pods-SearchKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchKit.debug.xcconfig"; path = "Target Support Files/Pods-SearchKit/Pods-SearchKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C171DFDCDF8A30273AF83D /* Pods_SearchKit.framework in Frameworks */,
+				98842596F7B7FAED96C56EB7 /* libPods-SearchKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +47,7 @@
 		11AF0381F15FDCFDBBC8872B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7750AE1E1316303AAA9F5539 /* Pods_SearchKit.framework */,
+				08C8278F2A4E2C9201CCCBCE /* libPods-SearchKit.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 				3E5D4B1220FB688B00C06AFF /* Sources */,
 				3E5D4B1320FB688B00C06AFF /* Frameworks */,
 				3E5D4B1420FB688B00C06AFF /* Resources */,
-				CB3EFB290A5FEEE62FADEA2D /* [CP] Embed Pods Frameworks */,
+				9C813B3F3F784E9069377EB7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +164,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9C813B3F3F784E9069377EB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchKit/Pods-SearchKit-resources.sh",
+				"${PODS_ROOT}/../SearchKit/SearchKit/IAUni2Pinyin.txt",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IAUni2Pinyin.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SearchKit/Pods-SearchKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C7EF7EA655B8F22F9380D2AD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,24 +202,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB3EFB290A5FEEE62FADEA2D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SearchKit/Pods-SearchKit-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IASearchKit/IASearchKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IASearchKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SearchKit/Pods-SearchKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

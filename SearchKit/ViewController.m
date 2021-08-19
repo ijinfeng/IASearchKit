@@ -9,7 +9,7 @@
 
 
 #import "ViewController.h"
-#import "IASearch.h"
+#import <IASearchKit/IASearch.h>
 
 @interface ViewController ()<UISearchBarDelegate>
 
