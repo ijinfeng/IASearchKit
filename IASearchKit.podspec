@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "IASearchKit"
-  s.version      = '1.0.7'
+  s.version      = '1.0.8'
   s.summary      = "search kit for iOS write by Objective-C"
   s.description  = <<-DESC
 			SearchKit support Chinese search, pinyin initials, full spelling.
