@@ -1,0 +1,16 @@
+PODS:
+  - IASearchKit (1.0.4)
+
+DEPENDENCIES:
+  - IASearchKit (from `./`)
+
+EXTERNAL SOURCES:
+  IASearchKit:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  IASearchKit: 1d780c83b35deed577e533d0d9d9b0126386a3d6
+
+PODFILE CHECKSUM: 83db8e2123289c34727464d677360c0a3613f512
+
+COCOAPODS: 1.10.1

@@ -104,4 +104,15 @@
     return returnStr;
 }
 
+- (NSString *)dataPath {
+//    [[NSBundle mainBundle] pathForResource:@"IAUni2Pinyin" ofType:@"txt"];
+    // 动态库：use_framework!
+    //[resources] ~/Build/Products/Debug-iphonesimulator/SearchKit.app/Frameworks/IASearchKit.framework/IAUni2Pinyin.txt
+    //[resource_bundle] ~/Build/Products/Debug-iphonesimulator/SearchKit.app/Frameworks/IASearchKit.framework/IASearchKit.bundle/IAUni2Pinyin.txt
+    
+    
+    // 静态库：#use_framework!
+    // ~/Build/Products/Debug-iphonesimulator/SearchKit.app/IASearchKit.bundle/IAUni2Pinyin.txt
+}
+
 @end

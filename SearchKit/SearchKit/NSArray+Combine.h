@@ -20,9 +20,6 @@
  */
 - (NSArray *)combine;
 
-// 暂定
-- (NSArray *)combine2;
-
 
 /**
  把数组中的字符串元素合并

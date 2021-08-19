@@ -21,9 +21,10 @@
  请在合适的时机把拼音文件加载到内存中
  */
 - (void)loadPinyinData;
-
-@property (nonatomic, strong, readonly) NSDictionary *pinyinDic; // 全拼
-
-@property (nonatomic, strong, readonly) NSDictionary *initialDic; // 首字母
+/// 全拼
+@property (nonatomic, strong, readonly) NSDictionary *pinyinDic; 
+/// 首字母
+@property (nonatomic, strong, readonly) NSDictionary *initialDic;
 
 @end
+

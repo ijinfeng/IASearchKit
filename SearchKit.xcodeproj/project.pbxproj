@@ -7,21 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17C171DFDCDF8A30273AF83D /* Pods_SearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7750AE1E1316303AAA9F5539 /* Pods_SearchKit.framework */; };
 		3E5D4B1B20FB688B00C06AFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D4B1A20FB688B00C06AFF /* AppDelegate.m */; };
 		3E5D4B1E20FB688B00C06AFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D4B1D20FB688B00C06AFF /* ViewController.m */; };
 		3E5D4B2120FB688B00C06AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D4B1F20FB688B00C06AFF /* Main.storyboard */; };
 		3E5D4B2320FB688B00C06AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D4B2220FB688B00C06AFF /* Assets.xcassets */; };
 		3E5D4B2620FB688B00C06AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D4B2420FB688B00C06AFF /* LaunchScreen.storyboard */; };
 		3E5D4B2920FB688B00C06AFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D4B2820FB688B00C06AFF /* main.m */; };
-		3E5D4B3620FB68FF00C06AFF /* NSString+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D4B3520FB68FF00C06AFF /* NSString+Search.m */; };
-		3E5D4B3B20FB77E500C06AFF /* IAPinYinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D4B3A20FB77E500C06AFF /* IAPinYinHelper.m */; };
-		3E5D4D3620FF6F8500C06AFF /* IAPinYinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D4D3520FF6F8500C06AFF /* IAPinYinManager.m */; };
-		3E5D4D3820FF705100C06AFF /* IAUni2Pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D4D3720FF705100C06AFF /* IAUni2Pinyin.txt */; };
-		3E5F729A210861790085AF41 /* NSArray+Combine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5F7299210861790085AF41 /* NSArray+Combine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E3942A621117F190059D9DC /* IASearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IASearch.h; sourceTree = "<group>"; };
 		3E5D4B1620FB688B00C06AFF /* SearchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5D4B1920FB688B00C06AFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E5D4B1A20FB688B00C06AFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,15 +27,9 @@
 		3E5D4B2520FB688B00C06AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E5D4B2720FB688B00C06AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E5D4B2820FB688B00C06AFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3E5D4B3420FB68FF00C06AFF /* NSString+Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Search.h"; sourceTree = "<group>"; };
-		3E5D4B3520FB68FF00C06AFF /* NSString+Search.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Search.m"; sourceTree = "<group>"; };
-		3E5D4B3920FB77E500C06AFF /* IAPinYinHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAPinYinHelper.h; sourceTree = "<group>"; };
-		3E5D4B3A20FB77E500C06AFF /* IAPinYinHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAPinYinHelper.m; sourceTree = "<group>"; };
-		3E5D4D3420FF6F8500C06AFF /* IAPinYinManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAPinYinManager.h; sourceTree = "<group>"; };
-		3E5D4D3520FF6F8500C06AFF /* IAPinYinManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAPinYinManager.m; sourceTree = "<group>"; };
-		3E5D4D3720FF705100C06AFF /* IAUni2Pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IAUni2Pinyin.txt; sourceTree = "<group>"; };
-		3E5F7298210861790085AF41 /* NSArray+Combine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Combine.h"; sourceTree = "<group>"; };
-		3E5F7299210861790085AF41 /* NSArray+Combine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Combine.m"; sourceTree = "<group>"; };
+		746132D3FF8F971EAEFC4903 /* Pods-SearchKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchKit.release.xcconfig"; path = "Target Support Files/Pods-SearchKit/Pods-SearchKit.release.xcconfig"; sourceTree = "<group>"; };
+		7750AE1E1316303AAA9F5539 /* Pods_SearchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7B7DAA1B7B2ECD92263461 /* Pods-SearchKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchKit.debug.xcconfig"; path = "Target Support Files/Pods-SearchKit/Pods-SearchKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C171DFDCDF8A30273AF83D /* Pods_SearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11AF0381F15FDCFDBBC8872B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7750AE1E1316303AAA9F5539 /* Pods_SearchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3E5D4B0D20FB688B00C06AFF = {
 			isa = PBXGroup;
 			children = (
 				3E5D4B1820FB688B00C06AFF /* SearchKit */,
 				3E5D4B1720FB688B00C06AFF /* Products */,
+				56BC285CDA0B2C446DEBEFC9 /* Pods */,
+				11AF0381F15FDCFDBBC8872B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +73,6 @@
 		3E5D4B1820FB688B00C06AFF /* SearchKit */ = {
 			isa = PBXGroup;
 			children = (
-				3E5D4B2F20FB689F00C06AFF /* SearchKit */,
 				3E5D4B1920FB688B00C06AFF /* AppDelegate.h */,
 				3E5D4B1A20FB688B00C06AFF /* AppDelegate.m */,
 				3E5D4B1C20FB688B00C06AFF /* ViewController.h */,
@@ -87,21 +86,13 @@
 			path = SearchKit;
 			sourceTree = "<group>";
 		};
-		3E5D4B2F20FB689F00C06AFF /* SearchKit */ = {
+		56BC285CDA0B2C446DEBEFC9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3E5D4D3720FF705100C06AFF /* IAUni2Pinyin.txt */,
-				3E5D4B3920FB77E500C06AFF /* IAPinYinHelper.h */,
-				3E5D4B3A20FB77E500C06AFF /* IAPinYinHelper.m */,
-				3E5D4D3420FF6F8500C06AFF /* IAPinYinManager.h */,
-				3E5D4D3520FF6F8500C06AFF /* IAPinYinManager.m */,
-				3E5D4B3420FB68FF00C06AFF /* NSString+Search.h */,
-				3E5D4B3520FB68FF00C06AFF /* NSString+Search.m */,
-				3E5F7298210861790085AF41 /* NSArray+Combine.h */,
-				3E5F7299210861790085AF41 /* NSArray+Combine.m */,
-				3E3942A621117F190059D9DC /* IASearch.h */,
+				FD7B7DAA1B7B2ECD92263461 /* Pods-SearchKit.debug.xcconfig */,
+				746132D3FF8F971EAEFC4903 /* Pods-SearchKit.release.xcconfig */,
 			);
-			path = SearchKit;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E5D4B2C20FB688B00C06AFF /* Build configuration list for PBXNativeTarget "SearchKit" */;
 			buildPhases = (
+				C7EF7EA655B8F22F9380D2AD /* [CP] Check Pods Manifest.lock */,
 				3E5D4B1220FB688B00C06AFF /* Sources */,
 				3E5D4B1320FB688B00C06AFF /* Frameworks */,
 				3E5D4B1420FB688B00C06AFF /* Resources */,
+				CB3EFB290A5FEEE62FADEA2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,25 +157,63 @@
 			files = (
 				3E5D4B2620FB688B00C06AFF /* LaunchScreen.storyboard in Resources */,
 				3E5D4B2320FB688B00C06AFF /* Assets.xcassets in Resources */,
-				3E5D4D3820FF705100C06AFF /* IAUni2Pinyin.txt in Resources */,
 				3E5D4B2120FB688B00C06AFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C7EF7EA655B8F22F9380D2AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB3EFB290A5FEEE62FADEA2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchKit/Pods-SearchKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IASearchKit/IASearchKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IASearchKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SearchKit/Pods-SearchKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E5D4B1220FB688B00C06AFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E5D4D3620FF6F8500C06AFF /* IAPinYinManager.m in Sources */,
 				3E5D4B1E20FB688B00C06AFF /* ViewController.m in Sources */,
 				3E5D4B2920FB688B00C06AFF /* main.m in Sources */,
-				3E5F729A210861790085AF41 /* NSArray+Combine.m in Sources */,
-				3E5D4B3B20FB77E500C06AFF /* IAPinYinHelper.m in Sources */,
 				3E5D4B1B20FB688B00C06AFF /* AppDelegate.m in Sources */,
-				3E5D4B3620FB68FF00C06AFF /* NSString+Search.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +345,7 @@
 		};
 		3E5D4B2D20FB688B00C06AFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD7B7DAA1B7B2ECD92263461 /* Pods-SearchKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +359,7 @@
 		};
 		3E5D4B2E20FB688B00C06AFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 746132D3FF8F971EAEFC4903 /* Pods-SearchKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

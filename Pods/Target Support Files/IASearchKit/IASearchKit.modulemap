@@ -1,0 +1,6 @@
+framework module IASearchKit {
+  umbrella header "IASearchKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

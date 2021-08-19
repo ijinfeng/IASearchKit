@@ -29,6 +29,8 @@
     // 请在合适的时候加载文件
     [[IAPinYinManager shared] loadPinyinData];
     
+    // 问题1
+    self.textLabel.text =@"Dd大道针真"; //@"碧水明珠D座，新华路013道交叉西北150米,指针大厦D座";
     
     // 测试链
     [self testPinyinsearch];
@@ -48,15 +50,9 @@
     return arr;
 }
 
-- (NSArray *)testArrCombine2 {
-    NSArray *arr = [@[@[@"1",@"2"],@[@"3"],@[@"4",@"5",@"6"],@[@"7",@"8"]] combine2];
-    return arr;
-}
-
 - (void)timelost {
     CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
-//    [self testArrCombine];
-    [self testArrCombine2];
+    [self testArrCombine];
     CFAbsoluteTime end = CFAbsoluteTimeGetCurrent() - start;
     NSLog(@"1 -- %lf",end);
 }

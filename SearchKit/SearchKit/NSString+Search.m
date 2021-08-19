@@ -9,6 +9,7 @@
 #import "NSString+Search.h"
 #import "IAPinYinHelper.h"
 #import "NSArray+Combine.h"
+#import "IAPinYinManager.h"
 
 @implementation NSString (Search)
 
@@ -51,7 +52,7 @@
     // 转成小写
     NSString *realKey = [keyword lowercaseString];
     
-    NSRange r = [self rangeOfString:realKey];
+    NSRange r = [self.lowercaseString rangeOfString:realKey];
     if (r.location != NSNotFound) {
         *range = r;
         return YES;
@@ -60,7 +61,7 @@
     // 优先拼音首字母
     NSArray *stringPinyinInitials = [IAPinYinHelper toPinyinInitialWithString:self];
     for (NSString *stringPinyinInitial in stringPinyinInitials) {
-        NSRange r = [stringPinyinInitial rangeOfString:realKey];
+        NSRange r = [stringPinyinInitial.lowercaseString rangeOfString:realKey];
         if (r.location != NSNotFound) {
             *range = r;
             return YES;
@@ -73,37 +74,32 @@
     
     for (NSUInteger index = 0; index < stringPinyins.count; index++) {
         NSString *stringPinyin = stringPinyins[index];
-        NSRange r = [stringPinyin rangeOfString:realKey];
+        NSRange r = [stringPinyin.lowercaseString rangeOfString:realKey];
         if (r.location != NSNotFound) {
             // 获取匹配到的那组拼音字串的每个字符的拼音组合
             NSArray *pinyin = pinyins[index];
-    
-            NSUInteger _index = 0; // 记录的字符下标
-            NSUInteger _count = 0; // 当前记录的拼音的总长度
-            NSUInteger _lastCount = 0;// 记录上一次的拼音总长度
-            unsigned int _length = (unsigned int)r.length; // 记录下匹配到的拼音的长度
-            BOOL match = NO;
             
-            for (NSString *pinyinStr in pinyin) {
-                unsigned int currentPinyinLength = (unsigned int)pinyinStr.length;
-                _count += currentPinyinLength;
-                if ((r.location + 1) >= _lastCount && ((r.location + 1) <= _count)) {
-                    r.location = _index;
-                    r.length = 1;
-                    match = YES;
+            NSUInteger _count = 0; // 当前已经记录的拼音的总长度，不包括当前这个拼音，用于和比较是否位于 range 内部
+            NSUInteger count = pinyin.count;
+            NSInteger location = -1;
+            NSUInteger length = 0;
+            
+            for (int i = 0; i < count; i++) {
+                NSString *pinyinStr = pinyin[i];
+                _count += pinyinStr.length;
+
+                if (_count > r.location && location == -1) {
+                    location = i;
                 }
-                if (match) {
-                    if (_length > currentPinyinLength) {
-                        r.length++;
-                        _length -= currentPinyinLength;
-                    } else {
-                        break;
-                    }
+                if (location >= 0) {
+                    length += 1;
+                }
+                if (_count >= r.location + r.length) {
+                    break;
                 }
                 
-                _index++;
-                _lastCount += currentPinyinLength;
             }
+            r = NSMakeRange(location, length);
             *range = r;
             return YES;
         }
@@ -119,16 +115,21 @@
     // 转成小写
     NSString *realKey = [keyword lowercaseString];
     
-    NSArray *rs = [self getRangesWithKeyword:realKey];
-    if (rs.count != 0) {
-        *ranges = rs;
-        return YES;
+    // 非纯英文
+    // 纯英文+精准匹配
+    if (![realKey isPureEnglish]) {
+        // 精准匹配
+        NSArray *rs = [self.lowercaseString getRangesWithKeyword:realKey];
+        if (rs.count != 0) {
+            *ranges = rs;
+            return YES;
+        }
     }
     
     // 优先拼音首字母
     NSArray *stringPinyinInitials = [IAPinYinHelper toPinyinInitialWithString:self];
     for (NSString *stringPinyinInitial in stringPinyinInitials) {
-        NSArray *rs = [stringPinyinInitial getRangesWithKeyword:realKey];
+        NSArray *rs = [stringPinyinInitial.lowercaseString getRangesWithKeyword:realKey];
         if (rs.count != 0) {
             *ranges = rs;
             return YES;
@@ -141,7 +142,7 @@
     
     for (NSUInteger index = 0; index < stringPinyins.count; index++) {
         NSString *stringPinyin = stringPinyins[index];
-        NSArray *rs = [stringPinyin getRangesWithKeyword:realKey];
+        NSArray *rs = [stringPinyin.lowercaseString getRangesWithKeyword:realKey];
         NSMutableArray *newRanges;
         if (rs.count != 0) {
             newRanges = [NSMutableArray arrayWithCapacity:rs.count];
@@ -153,32 +154,27 @@
                 // 获取匹配到的那组拼音字串的每个字符的拼音组合
                 NSArray *pinyin = pinyins[index];
                 
-                NSUInteger _index = 0; // 记录的字符下标
-                NSUInteger _count = 0; // 当前记录的拼音的总长度
-                NSUInteger _lastCount = 0;// 记录上一次的拼音总长度
-                unsigned int _length = (unsigned int)r.length; // 记录下匹配到的拼音的长度
-                BOOL match = NO;
+                NSUInteger _count = 0; // 当前已经记录的拼音的总长度，不包括当前这个拼音，用于和比较是否位于 range 内部
+                NSUInteger count = pinyin.count;
+                NSInteger location = -1;
+                NSUInteger length = 0;
                 
-                for (NSString *pinyinStr in pinyin) {
-                    unsigned int currentPinyinLength = (unsigned int)pinyinStr.length;
-                    _count += currentPinyinLength;
-                    if ((r.location + 1) >= _lastCount && ((r.location + 1) <= _count)) {
-                        r.location = _index;
-                        r.length = 1;
-                        match = YES;
+                for (int i = 0; i < count; i++) {
+                    NSString *pinyinStr = pinyin[i];
+                    _count += pinyinStr.length;
+
+                    if (_count > r.location && location == -1) {
+                        location = i;
                     }
-                    if (match) {
-                        if (_length > currentPinyinLength) {
-                            r.length++;
-                            _length -= currentPinyinLength;
-                        } else {
-                            break;
-                        }
+                    if (location >= 0) {
+                        length += 1;
+                    }
+                    if (_count >= r.location + r.length) {
+                        break;
                     }
                     
-                    _index++;
-                    _lastCount += currentPinyinLength;
                 }
+                r = NSMakeRange(location, length);
                 [newRanges addObject:[NSValue valueWithRange:r]];
             }
         }
@@ -189,6 +185,13 @@
     }
     
     return NO;
+}
+
+/// 是否为纯英文
+- (BOOL)isPureEnglish {
+    NSString *regex = @"[a-zA-Z]+";
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+    return  [predicate evaluateWithObject:self];
 }
 
 @end

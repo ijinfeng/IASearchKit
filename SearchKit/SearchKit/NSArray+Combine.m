@@ -35,11 +35,6 @@
     }
 }
 
-- (NSArray *)combine2 {
-    return nil;
-}
-
-
 // string
 - (NSArray *)combineToString {
     NSMutableArray *results = [NSMutableArray arrayWithCapacity:self.count];
