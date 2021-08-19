@@ -12,7 +12,7 @@
 `gem install cocoapods`
 
 ### Podfile
-`pod 'IASearchKit', '~> 1.0.4'`
+`pod 'IASearchKit', '~> 1.1.0'`
 
 或者直接：
 `pod 'IASearchKit'`
@@ -44,6 +44,9 @@ if (match) {
 
 }
 ```
+
+### 更新记录
+* **1.1.0** ：修复bug，这个bug会导致输入英文字母无法识别其大写形式。
 
 ### 许可证
 This project is licensed under the terms of the MIT license. See the [LICENSE](https://github.com/CranzCapatain/IASearchKit/blob/master/LICENSE) file.
