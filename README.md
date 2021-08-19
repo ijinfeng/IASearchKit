@@ -12,7 +12,7 @@
 `gem install cocoapods`
 
 ### Podfile
-`pod 'IASearchKit', '~> 1.1.1'`
+`pod 'IASearchKit', '~> 1.2.0'`
 
 或者直接：
 `pod 'IASearchKit'`
