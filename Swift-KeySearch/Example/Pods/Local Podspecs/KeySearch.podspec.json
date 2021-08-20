@@ -1,0 +1,23 @@
+{
+  "name": "KeySearch",
+  "version": "0.1.0",
+  "summary": "A short description of KeySearch.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ijinfeng/KeySearch",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ijinfeng": "851406283@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/ijinfeng/KeySearch.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "KeySearch/Classes/**/*",
+  "resources": "KeySearch/Assets/*.txt"
+}
