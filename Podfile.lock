@@ -1,5 +1,5 @@
 PODS:
-  - IASearchKit (1.0.4)
+  - IASearchKit (1.2.0)
 
 DEPENDENCIES:
   - IASearchKit (from `./`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  IASearchKit: 1d780c83b35deed577e533d0d9d9b0126386a3d6
+  IASearchKit: 03aad7039b63a22fa17707647db576f4bc16e14b
 
 PODFILE CHECKSUM: 2967bdb087c5608d56af3074a987134d8d6cbc3f
 

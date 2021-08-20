@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4C747AD1F90F20A5A5B4811C504C2CD3"
-               BuildableName = "IASearchKit.framework"
+               BuildableName = "libIASearchKit.a"
                BlueprintName = "IASearchKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

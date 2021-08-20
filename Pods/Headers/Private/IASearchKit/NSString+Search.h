@@ -1,0 +1,1 @@
+../../../../SearchKit/SearchKit/NSString+Search.h
