@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2EE849D779A3AA6242E2EA9B2701F3 /* KeySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F628FDBA770C35F8F776C2B5C7498609 /* KeySearch.swift */; };
 		1BD7007E3C09D3245E4E35F6EE22BA1C /* Pods-KeySearch_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5713242D8FDAC6AA90D1651359DAC024 /* Pods-KeySearch_Example-dummy.m */; };
-		413829F87E31D9A1994238D45CDCD7DB /* IAUni2Pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9EED22E081C6111C5B5054EE4FD9E20C /* IAUni2Pinyin.txt */; };
+		30C815B9FFEFF30A20B68AECE3241A79 /* IAUni2Pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4533311403D253F7B9B5FE9FAB931B12 /* IAUni2Pinyin.txt */; };
+		39B66371A025E73CC53609FC64AE5CD7 /* PinYinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E642C43F4EC89D44367C132F7C0D9AA4 /* PinYinManager.swift */; };
 		421C83A8347886C0F685F2713615CA5F /* Pods-KeySearch_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ACF043E1760E30A7BDD85B8545D7568 /* Pods-KeySearch_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52373B03E1129739D9AF548BA83F73B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		572D77D182C6461B2BBD22B7B74B9A18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		782EEEA926CF59DD002C46BD /* KeySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782EEEA826CF59DD002C46BD /* KeySearch.swift */; };
-		B0F55BA9C763B91BEC83BC6280E7BAE7 /* PinYinHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434975B43C4442456D063F4508A08E47 /* PinYinHelper.swift */; };
+		AE205C7E259798EC1710F8B8EB0C8FE1 /* PinYinHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F8C40D76BB5FE8D88CFA27695D7E50 /* PinYinHelper.swift */; };
 		BFA468A7E10BB375AC12C3E9EAD3A1E1 /* Pods-KeySearch_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7814F2047C9E37F11307A17E076BABD /* Pods-KeySearch_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2078E57C3F6157F737FC271AA74E5B2 /* Pods-KeySearch_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BB3920DAF4DDB43E43D0CF84099AB /* Pods-KeySearch_Tests-dummy.m */; };
-		DE1EF97E1B307813AA02415FF9AED139 /* KeySearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92BFF141A110217BFC3CEA09D1FE1DAA /* KeySearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1B7D392CE25009F878CF71FB300CB21 /* KeySearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DF1C9CE87785A917D1033F1ED3670 /* KeySearch-dummy.m */; };
+		D46C9FF2E2C7A0F5BB4C2565620EDBFB /* KeySearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF906BB31244C2F595FEC17DD281B57 /* KeySearch-dummy.m */; };
+		DE1EF97E1B307813AA02415FF9AED139 /* KeySearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CB3BF40D124250F821AC2E5DD5E6F70 /* KeySearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F07C04BF6B27B98C824B467140C63AE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F08720C863EC6CD7A76CFC198B21DEFF /* PinYinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2368E670213DD536CAD762C21B55CE0 /* PinYinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4FBF559095B9E1B10EC440D5E8310A75 /* PBXContainerItemProxy */ = {
+		7DFBB2867409CA6D5A3A872FB66B9634 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 43B4EAF003A8D9997890C38552D295EF;
 			remoteInfo = "Pods-KeySearch_Example";
 		};
-		FD0F7F34F9725EE2EF9CC47DFCA5F6EB /* PBXContainerItemProxy */ = {
+		B361F1C9345CD0D417F330D79E1143BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -41,38 +41,37 @@
 
 /* Begin PBXFileReference section */
 		025C82C7A94C5B5EC4EC7F6B022DE928 /* Pods-KeySearch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeySearch_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0D63536295AB68FEFC1EA3A0D6CB568F /* KeySearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeySearch.modulemap; sourceTree = "<group>"; };
-		3D4DF1C9CE87785A917D1033F1ED3670 /* KeySearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeySearch-dummy.m"; sourceTree = "<group>"; };
-		434975B43C4442456D063F4508A08E47 /* PinYinHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinYinHelper.swift; path = KeySearch/Classes/PinYinHelper.swift; sourceTree = "<group>"; };
-		44F54BA2C403C28C5E508A359CEDA3A2 /* KeySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeySearch.debug.xcconfig; sourceTree = "<group>"; };
+		26036E62ADC0965F18D13571F03166C9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2CF906BB31244C2F595FEC17DD281B57 /* KeySearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeySearch-dummy.m"; sourceTree = "<group>"; };
+		4533311403D253F7B9B5FE9FAB931B12 /* IAUni2Pinyin.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = IAUni2Pinyin.txt; path = "Swift-KeySearch/KeySearch/Assets/IAUni2Pinyin.txt"; sourceTree = "<group>"; };
 		47D8102360CFFF38CDCD8918EBB8F9D8 /* Pods-KeySearch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeySearch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4ACF043E1760E30A7BDD85B8545D7568 /* Pods-KeySearch_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeySearch_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5713242D8FDAC6AA90D1651359DAC024 /* Pods-KeySearch_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeySearch_Example-dummy.m"; sourceTree = "<group>"; };
 		592139B824DE5032E3139F882843458E /* Pods-KeySearch_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeySearch_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5A30B069DD28A03410EC752D3ABDF951 /* Pods-KeySearch_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeySearch_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		62C58F1033325B874B3213504C402646 /* Pods_KeySearch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeySearch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C58F1033325B874B3213504C402646 /* Pods_KeySearch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeySearch_Example.framework; path = "Pods-KeySearch_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		782EEEA826CF59DD002C46BD /* KeySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeySearch.swift; sourceTree = "<group>"; };
-		79A5CD2FE405DE7C118AF826FE6D7CEE /* KeySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeySearch.release.xcconfig; sourceTree = "<group>"; };
-		7EC736F59CF57DE71B982A7B43C869AF /* KeySearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC736F59CF57DE71B982A7B43C869AF /* KeySearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeySearch.framework; path = KeySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0FC79A9924163FDD2045D5A76F03F7 /* Pods-KeySearch_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeySearch_Tests.modulemap"; sourceTree = "<group>"; };
+		7F6CFF09C9DC89786A7443A39A6ED9A0 /* KeySearch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KeySearch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		878CE1035B5E067E8D467AD929638F88 /* Pods-KeySearch_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeySearch_Example-frameworks.sh"; sourceTree = "<group>"; };
-		87E50D21C33655791083591D20E3CCC6 /* KeySearch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KeySearch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		92BFF141A110217BFC3CEA09D1FE1DAA /* KeySearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeySearch-umbrella.h"; sourceTree = "<group>"; };
+		8CB3BF40D124250F821AC2E5DD5E6F70 /* KeySearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeySearch-umbrella.h"; sourceTree = "<group>"; };
+		9256355EB82370DC224781B17DCAF538 /* KeySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeySearch.release.xcconfig; sourceTree = "<group>"; };
+		94B853B61D4C52D31956C69E5353A445 /* KeySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeySearch.debug.xcconfig; sourceTree = "<group>"; };
 		96203AD2ED91666635BDBFF411E0C6C6 /* Pods-KeySearch_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeySearch_Example.modulemap"; sourceTree = "<group>"; };
 		9C4BB3920DAF4DDB43E43D0CF84099AB /* Pods-KeySearch_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeySearch_Tests-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EED22E081C6111C5B5054EE4FD9E20C /* IAUni2Pinyin.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IAUni2Pinyin.txt; path = KeySearch/Assets/IAUni2Pinyin.txt; sourceTree = "<group>"; };
-		A92DA9F5ED4545FAEC9BE02B8024E981 /* KeySearch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeySearch-prefix.pch"; sourceTree = "<group>"; };
-		ADB21F3DB39BCB65D7CEE91DAC934414 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B2F8C40D76BB5FE8D88CFA27695D7E50 /* PinYinHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinYinHelper.swift; path = "Swift-KeySearch/KeySearch/Classes/PinYinHelper.swift"; sourceTree = "<group>"; };
 		B85EACB690E0670DFBDED9F97618A44F /* Pods-KeySearch_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeySearch_Tests-Info.plist"; sourceTree = "<group>"; };
 		B9DC0758AB70760147C255611A780560 /* Pods-KeySearch_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeySearch_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D2368E670213DD536CAD762C21B55CE0 /* PinYinManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinYinManager.swift; path = KeySearch/Classes/PinYinManager.swift; sourceTree = "<group>"; };
-		D295EC8D3382C38F133348CD57D4C429 /* KeySearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeySearch-Info.plist"; sourceTree = "<group>"; };
-		D608B9B7CF843D19AB4E9E4DBC83D64B /* Pods_KeySearch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeySearch_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D608B9B7CF843D19AB4E9E4DBC83D64B /* Pods_KeySearch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeySearch_Tests.framework; path = "Pods-KeySearch_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E213A12B86A756ABA4011515EA2F962A /* Pods-KeySearch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeySearch_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E94AA02969202B79B3DC9FC43ECEA4BF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E5B3D843DDDFF24F9FECA23A85BC88E5 /* KeySearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeySearch.modulemap; sourceTree = "<group>"; };
+		E642C43F4EC89D44367C132F7C0D9AA4 /* PinYinManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinYinManager.swift; path = "Swift-KeySearch/KeySearch/Classes/PinYinManager.swift"; sourceTree = "<group>"; };
+		E9274FD509902C321F74C27D87A19AFF /* KeySearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeySearch-Info.plist"; sourceTree = "<group>"; };
+		F3F5667A374D8DA4AB6131FAAA1862DC /* KeySearch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeySearch-prefix.pch"; sourceTree = "<group>"; };
 		F5FBEAF9A30E727476AE3CDEF61E0939 /* Pods-KeySearch_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeySearch_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F628FDBA770C35F8F776C2B5C7498609 /* KeySearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeySearch.swift; path = "Swift-KeySearch/KeySearch/Classes/KeySearch.swift"; sourceTree = "<group>"; };
 		F7814F2047C9E37F11307A17E076BABD /* Pods-KeySearch_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeySearch_Example-umbrella.h"; sourceTree = "<group>"; };
 		FA66954CEAE9E35C6E535C2AC7C6CE7F /* Pods-KeySearch_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeySearch_Example-Info.plist"; sourceTree = "<group>"; };
 		FD6734CF09E8A616B0C160888705EAE0 /* Pods-KeySearch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeySearch_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,12 +105,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		299588DFDB3EE8F01B709C3E540A32F1 /* Development Pods */ = {
+		09AE497CAE96205E66093E7F4E0BDCFE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BB3F87C9F7FA71F64C29F959FFD48AA4 /* KeySearch */,
+				E5B3D843DDDFF24F9FECA23A85BC88E5 /* KeySearch.modulemap */,
+				2CF906BB31244C2F595FEC17DD281B57 /* KeySearch-dummy.m */,
+				E9274FD509902C321F74C27D87A19AFF /* KeySearch-Info.plist */,
+				F3F5667A374D8DA4AB6131FAAA1862DC /* KeySearch-prefix.pch */,
+				8CB3BF40D124250F821AC2E5DD5E6F70 /* KeySearch-umbrella.h */,
+				94B853B61D4C52D31956C69E5353A445 /* KeySearch.debug.xcconfig */,
+				9256355EB82370DC224781B17DCAF538 /* KeySearch.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Swift-KeySearch/Example/Pods/Target Support Files/KeySearch";
+			sourceTree = "<group>";
+		};
+		359A3D27FFE4AE023876D8967C33E2ED /* KeySearch */ = {
+			isa = PBXGroup;
+			children = (
+				4533311403D253F7B9B5FE9FAB931B12 /* IAUni2Pinyin.txt */,
+				F628FDBA770C35F8F776C2B5C7498609 /* KeySearch.swift */,
+				B2F8C40D76BB5FE8D88CFA27695D7E50 /* PinYinHelper.swift */,
+				E642C43F4EC89D44367C132F7C0D9AA4 /* PinYinManager.swift */,
+				62ADC1DCBC5553C1D84FD980A201DE26 /* Pod */,
+				09AE497CAE96205E66093E7F4E0BDCFE /* Support Files */,
+			);
+			name = KeySearch;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -132,6 +152,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		62ADC1DCBC5553C1D84FD980A201DE26 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7F6CFF09C9DC89786A7443A39A6ED9A0 /* KeySearch.podspec */,
+				26036E62ADC0965F18D13571F03166C9 /* LICENSE */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		85C0BCAB3AF0561ACD3F72CF53BCD019 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				359A3D27FFE4AE023876D8967C33E2ED /* KeySearch */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		A6C652D430BDFC04A5DC53BE8BFCE1BB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,35 +176,6 @@
 				BDD705C4E3FADA05F92D8AD6F995B0FD /* Pods-KeySearch_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		AFD3D8E86E73D621B624D671613978A8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0D63536295AB68FEFC1EA3A0D6CB568F /* KeySearch.modulemap */,
-				3D4DF1C9CE87785A917D1033F1ED3670 /* KeySearch-dummy.m */,
-				D295EC8D3382C38F133348CD57D4C429 /* KeySearch-Info.plist */,
-				A92DA9F5ED4545FAEC9BE02B8024E981 /* KeySearch-prefix.pch */,
-				92BFF141A110217BFC3CEA09D1FE1DAA /* KeySearch-umbrella.h */,
-				44F54BA2C403C28C5E508A359CEDA3A2 /* KeySearch.debug.xcconfig */,
-				79A5CD2FE405DE7C118AF826FE6D7CEE /* KeySearch.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KeySearch";
-			sourceTree = "<group>";
-		};
-		BB3F87C9F7FA71F64C29F959FFD48AA4 /* KeySearch */ = {
-			isa = PBXGroup;
-			children = (
-				9EED22E081C6111C5B5054EE4FD9E20C /* IAUni2Pinyin.txt */,
-				434975B43C4442456D063F4508A08E47 /* PinYinHelper.swift */,
-				D2368E670213DD536CAD762C21B55CE0 /* PinYinManager.swift */,
-				782EEEA826CF59DD002C46BD /* KeySearch.swift */,
-				C4E940C74D50B57A200832DDB4AA8097 /* Pod */,
-				AFD3D8E86E73D621B624D671613978A8 /* Support Files */,
-			);
-			name = KeySearch;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		BDD705C4E3FADA05F92D8AD6F995B0FD /* Pods-KeySearch_Tests */ = {
@@ -184,16 +192,6 @@
 			);
 			name = "Pods-KeySearch_Tests";
 			path = "Target Support Files/Pods-KeySearch_Tests";
-			sourceTree = "<group>";
-		};
-		C4E940C74D50B57A200832DDB4AA8097 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				87E50D21C33655791083591D20E3CCC6 /* KeySearch.podspec */,
-				E94AA02969202B79B3DC9FC43ECEA4BF /* LICENSE */,
-				ADB21F3DB39BCB65D7CEE91DAC934414 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		C8DB6534AACB66252D7BD98076BE39B3 /* Pods-KeySearch_Example */ = {
@@ -217,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				299588DFDB3EE8F01B709C3E540A32F1 /* Development Pods */,
+				85C0BCAB3AF0561ACD3F72CF53BCD019 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				5DAAFD767881080D3B3A600923556497 /* Products */,
 				A6C652D430BDFC04A5DC53BE8BFCE1BB /* Targets Support Files */,
@@ -274,7 +272,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				EDB6C2F45E86E34D2CEC9E0EEE3ED0FC /* PBXTargetDependency */,
+				B32BD1A9BF2E9F3EC91BB063DA240267 /* PBXTargetDependency */,
 			);
 			name = "Pods-KeySearch_Example";
 			productName = "Pods-KeySearch_Example";
@@ -293,7 +291,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				85B56E6FA902D801E57BE5DE9B40F788 /* PBXTargetDependency */,
+				9A158F076EA92BC6ECAB4BC61C2001D3 /* PBXTargetDependency */,
 			);
 			name = "Pods-KeySearch_Tests";
 			productName = "Pods-KeySearch_Tests";
@@ -305,7 +303,7 @@
 			buildConfigurationList = 5971EF76355CC616DC26476C0A2DCDAD /* Build configuration list for PBXNativeTarget "KeySearch" */;
 			buildPhases = (
 				881D46B5320289C898E46D479E40C801 /* Headers */,
-				B252AB31964E209D4B5E890E437276FF /* Sources */,
+				4DE8D3D02657100ECEABC4E7DF6D62F8 /* Sources */,
 				40A4095E5323852B3C49B8EDE83E66D8 /* Frameworks */,
 				249483DCEE13275137F8D45AE43D79AA /* Resources */,
 			);
@@ -324,8 +322,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -352,7 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				413829F87E31D9A1994238D45CDCD7DB /* IAUni2Pinyin.txt in Resources */,
+				30C815B9FFEFF30A20B68AECE3241A79 /* IAUni2Pinyin.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +371,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4DE8D3D02657100ECEABC4E7DF6D62F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46C9FF2E2C7A0F5BB4C2565620EDBFB /* KeySearch-dummy.m in Sources */,
+				0B2EE849D779A3AA6242E2EA9B2701F3 /* KeySearch.swift in Sources */,
+				AE205C7E259798EC1710F8B8EB0C8FE1 /* PinYinHelper.swift in Sources */,
+				39B66371A025E73CC53609FC64AE5CD7 /* PinYinManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A5BA3838E54BFBDAD67D7185CBF44EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,31 +398,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B252AB31964E209D4B5E890E437276FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1B7D392CE25009F878CF71FB300CB21 /* KeySearch-dummy.m in Sources */,
-				782EEEA926CF59DD002C46BD /* KeySearch.swift in Sources */,
-				B0F55BA9C763B91BEC83BC6280E7BAE7 /* PinYinHelper.swift in Sources */,
-				F08720C863EC6CD7A76CFC198B21DEFF /* PinYinManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		85B56E6FA902D801E57BE5DE9B40F788 /* PBXTargetDependency */ = {
+		9A158F076EA92BC6ECAB4BC61C2001D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-KeySearch_Example";
 			target = 43B4EAF003A8D9997890C38552D295EF /* Pods-KeySearch_Example */;
-			targetProxy = 4FBF559095B9E1B10EC440D5E8310A75 /* PBXContainerItemProxy */;
+			targetProxy = 7DFBB2867409CA6D5A3A872FB66B9634 /* PBXContainerItemProxy */;
 		};
-		EDB6C2F45E86E34D2CEC9E0EEE3ED0FC /* PBXTargetDependency */ = {
+		B32BD1A9BF2E9F3EC91BB063DA240267 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KeySearch;
 			target = F6FD6623D6EE758A4522CFEA276D249B /* KeySearch */;
-			targetProxy = FD0F7F34F9725EE2EF9CC47DFCA5F6EB /* PBXContainerItemProxy */;
+			targetProxy = B361F1C9345CD0D417F330D79E1143BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -551,7 +549,7 @@
 		};
 		9EC5FBD5F9E184FCD61673BBE10A311A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44F54BA2C403C28C5E508A359CEDA3A2 /* KeySearch.debug.xcconfig */;
+			baseConfigurationReference = 94B853B61D4C52D31956C69E5353A445 /* KeySearch.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -581,7 +579,7 @@
 		};
 		9FD44949504C34A90F8039C2038B84B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79A5CD2FE405DE7C118AF826FE6D7CEE /* KeySearch.release.xcconfig */;
+			baseConfigurationReference = 9256355EB82370DC224781B17DCAF538 /* KeySearch.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -665,7 +663,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

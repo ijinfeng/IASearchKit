@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'KeySearch_Example' do
-  pod 'KeySearch', :path => '../'
+  pod 'KeySearch', :path => '../../'
 
   target 'KeySearch_Tests' do
     inherit! :search_paths

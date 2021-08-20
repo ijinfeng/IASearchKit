@@ -1,16 +1,16 @@
 PODS:
-  - KeySearch (0.1.0)
+  - KeySearch (0.1.1)
 
 DEPENDENCIES:
-  - KeySearch (from `../`)
+  - KeySearch (from `../../`)
 
 EXTERNAL SOURCES:
   KeySearch:
-    :path: "../"
+    :path: "../../"
 
 SPEC CHECKSUMS:
-  KeySearch: c186f01eed0290e4ab062efc1f3f8115fb7e0930
+  KeySearch: 7c3bc0f5953465b08b3bb63e30ecd4bd1746865a
 
-PODFILE CHECKSUM: 56d666609ba8cb0c6a7fc3276ec03ca63708fcc8
+PODFILE CHECKSUM: 750a540ced78d9d44ba662d32edf244436b6cae8
 
 COCOAPODS: 1.10.1
