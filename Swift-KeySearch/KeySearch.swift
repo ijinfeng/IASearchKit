@@ -30,10 +30,6 @@ public extension String {
             
             ranges.append(r)
         }
-        
-        for r in ranges {
-            print("###r=\(self.rawRange(from: r))")
-        }
         return ranges
     }
     

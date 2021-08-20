@@ -13,8 +13,7 @@ class ViewController: UIViewController {
 
     var textLabel: UILabel = {
         let label = UILabel()
-//        label.text = "D座大道就在前方，你的呢dong东西呢"
-        label.text = "D座大道"
+        label.text = "D座大道就在前方，你的呢dong东西呢"
         label.textAlignment = .center
         label.numberOfLines = 0
         label.textColor = .blue
