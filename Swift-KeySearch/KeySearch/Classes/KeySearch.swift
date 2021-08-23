@@ -25,9 +25,6 @@ public extension String {
             let lowerBound = r.upperBound
             let upperBound = self.endIndex
             lastRange = lowerBound..<upperBound
-            
-            print("======r=\(self.rawRange(from: r)), last=\(self.rawRange(from: lastRange))")
-            
             ranges.append(r)
         }
         return ranges

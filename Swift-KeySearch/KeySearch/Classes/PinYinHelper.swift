@@ -7,7 +7,7 @@
 
 import Foundation
 
-public extension String {
+extension String {
     
     /// 判断字符串中是否有中文
     /// - Returns: 有：true，没有：false
